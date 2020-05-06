@@ -23,6 +23,9 @@ export function render({ container, mimeType, data }: IRenderInfo) {
   const code = document.createElement('code');
   code.textContent = `mime type: ${mimeType}\n\n${JSON.stringify(data, null, 2)}`;
   pre.appendChild(code);
+  // const h1 = document.createElement('h1');
+  // h1.textContent = 'Results:';
+  // container.appendChild(h1);
   container.appendChild(pre);
 }
 

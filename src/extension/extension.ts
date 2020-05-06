@@ -15,7 +15,7 @@ export function activate(context: vscode.ExtensionContext) {
 				type: 'display_data',
         // The list of mime types this renderer knows how to render. Should
         // match those registered in your package.json:
-				subTypes: ['application/json'],
+				subTypes: ['x-application/github-issues'],
 			},
 			new SampleRenderer(context),
 		),
